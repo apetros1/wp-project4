@@ -1,0 +1,443 @@
+<html>
+<head>
+    <title>Project 4</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+ 
+<body>
+<div class="booking-form-box">
+    <form method="get" action="checkout.php">
+    <div class="radio-btn">
+        <input type="radio" class="btn" name="check" value="Roundtrip"><span>Roundtrip</span>
+        <input type="radio" class="btn" name="check" value="One Way">
+        <span>One Way</span>
+    </div>
+    
+    <div class="booking-form">
+        <label>From</label>
+        <input type="text" list="airports" name="from" class="form-control" placeholder="City/Airport">
+        <label>To</label>
+        <input type="text" list="airports" name="to" class="form-control" placeholder="City/Airport">
+    
+        <datalist id="airports">
+	<option value="Aberdeen, South Dakota, ABR">
+	<option value="Abilene, Texas, ABI">
+	<option value="Springfield, Illinois, SPI">
+	<option value="Akron / Canton, Ohio, CAK">
+	<option value="Albany, New York, ALB">
+	<option value="Jacksonville, North Carolina, OAJ">
+	<option value="Albuquerque, New Mexico, ABQ">
+	<option value="Alexandria, Louisiana, AEX">
+	<option value="Alpena, Michigan, APN">
+	<option value="Aniak, Alaska, ANI">
+	<option value="Agana / Tamuning, Guam, GUM">
+	<option value="Vieques, Puerto Rico, VQS">
+	<option value="Appleton, Wisconsin, ATW">
+	<option value="Arcata / Eureka, California, ACV">
+	<option value="Latrobe, Pennsylvania, LBE">
+	<option value="Asheville, North Carolina, AVL">
+	<option value="Aspen, Colorado, ASE">
+	<option value="Atlantic City, New Jersey, ACY">
+	<option value="Augusta, Georgia, AGS">
+	<option value="Austin, Texas, AUS">
+	<option value="Baltimore / Glen Burnie, Maryland, BWI">
+	<option value="Bangor, Maine, BGR">
+	<option value="Paducah, Kentucky, PAH">
+	<option value="Hyannis, Massachuttces, HYA">
+	<option value="Baton Rouge, Louisiana, BTR">
+	<option value="Bellingham, Washington, BLI">
+	<option value="Bemidji, Minniesota, BJI">
+	<option value="Culebra, Puerto Rico, CPX">
+	<option value="Butte, Montana, BTM">
+	<option value="Bethel, Alaska, BET">
+	<option value="Little Rock, Arkansas, LIT">
+	<option value="Billings, Montana, BIL">
+	<option value="Birmingham, Alabama, BHM">
+	<option value="Flint, Michigan, FNT">
+	<option value="Bismarck, North Dakota, BIS">
+	<option value="Block Island / New Shoreham, Rhode Island, BID">
+	<option value="Lexington, Kentucky, LEX">
+	<option value="Burbank, California, BUR">
+	<option value="Boise, Idaho, BOI">
+	<option value="Boulder City, Nevada, BLD">
+	<option value="Bozeman, Montana, BZN">
+	<option value="Hartford, Connecticut, BDL">
+	<option value="Brainerd, Minniesota, BRD">
+	<option value="Brownsville, Texas, BRO">
+	<option value="Brunswick, Georgia, BQK">
+	<option value="Buffalo, New York, BUF">
+	<option value="Burlington, Vermont, BTV">
+	<option value="Lansing, Michigan, LAN">
+	<option value="Casper, Wyoming, CPR">
+	<option value="Cedar City, Utah, CDC">
+	<option value="Bloomington / Normal, Illinois, BMI">
+	<option value="Grand Island, Nebraska, GRI">
+	<option value="Mosinee, Wisconsin, CWA">
+	<option value="Santa Rosa, California, STS">
+	<option value="Charleston, South Carolina, CHS">
+	<option value="Charlotte, North Carolina, CLT">
+	<option value="Charlottesville, Virginia, CHO">
+	<option value="Chattanooga, Tennessee, CHA">
+	<option value="Traverse City, Michigan, TVC">
+	<option value="Cheyenne, Wyoming, CYS">
+	<option value="Chicago, Illinois, MDW">
+	<option value="Chicago, Illinois, ORD">
+	<option value="Rockford, Illinois, RFD">
+	<option value="Chico, California, CIC">
+	<option value="Sault Ste. Marie, Michigan, CIU">
+	<option value="Eau Claire, Wisconsin, EAU">
+	<option value="Cincinnati, Ohio, LUK">
+	<option value="Cincinnati / Covington, Kentucky, CVG">
+	<option value="Colorado Springs, Colorado, COS">
+	<option value="Cleveland, Ohio, CLE">
+	<option value="New Bern, North Carolina, EWN">
+	<option value="Columbia, South Carolina, CAE">
+	<option value="Columbia, Missouri, COU">
+	<option value="Columbus, Georgia, CSG">
+	<option value="Concord, North Carolina, USA">
+	<option value="Corpus Christi / Kingsville, Texas, CRP">
+	<option value="Dallas, Texas, DAL">
+	<option value="Dallas-Fort Worth, Texas, DFW">
+	<option value="Madison, Wisconsin, MSN">
+	<option value="Honolulu , Oahu, Hawaii, HNL">
+	<option value="Daytona Beach, Florida, DAB">
+	<option value="Deadhorse / Prudhoe Bay, Alaska, SCC">
+	<option value="Crescent City, California, CEC">
+	<option value="Escanaba, Michigan, ESC">
+	<option value="Denver, Colorado, DEN">
+	<option value="Des Moines, Iowa, DSM">
+	<option value="Valparaiso, Florida, VPS">
+	<option value="Detroit / Romulus, Michigan, DTW">
+	<option value="Dickinson, North Dakota, DIK">
+	<option value="Dillingham, Alaska, DLG">
+	<option value="Dothan, Alabama, DHN">
+	<option value="Dubuque, Iowa, DBQ">
+	<option value="Duluth, Minniesota, DLH">
+	<option value="Durango, Colorado, DRO">
+	<option value="Eagle, Colorado, EGE">
+	<option value="Longview, Texas, GGG">
+	<option value="College Station, Texas, CLL">
+	<option value="Galena, Alaska, GAL">
+	<option value="El Paso, Texas, ELP">
+	<option value="Elko, Nevada, EKO">
+	<option value="Elmira / Corning, New York, ELM">
+	<option value="Omaha, Nebraska, OMA">
+	<option value="Erie, Pennsylvania, ERI">
+	<option value="Eugene, Oregon, EUG">
+	<option value="Evansville, Indiana, EVV">
+	<option value="Fairbanks, Alaska, FAI">
+	<option value="International Falls, Minniesota, INL">
+	<option value="Fayetteville, North Carolina, FAY">
+	<option value="San Juan / Miramar, Puerto Rico, SIG">
+	<option value="Flagstaff, Arizona, FLG">
+	<option value="Florence, South Carolina, FLO">
+	<option value="Iron Mountain / Kingsford, Michigan, IMT">
+	<option value="Fort Lauderdale, Florida, FLL">
+	<option value="Fort Smith, Arkansas, FSM">
+	<option value="Fort Wayne, Indiana, FWA">
+	<option value="Fresno, California, FAT">
+	<option value="Friday Harbor, Washington, FRD">
+	<option value="Hailey, Idaho, SUN">
+	<option value="Gainesville, Florida, GNV">
+	<option value="Garden City, Kansas, GCK">
+	<option value="Boston, Massachuttces, BOS">
+	<option value="Milwaukee, Wisconsin, MKE">
+	<option value="Peoria, Illinois, PIA">
+	<option value="Houston, Texas, IAH">
+	<option value="Grand Rapids, Michigan, GRR">
+	<option value="Gillette, Wyoming, GCC">
+	<option value="Kalispell, Montana, FCA">
+	<option value="Columbus / West Point / Starkville, Mississippi, GTR">
+	<option value="Grand Canyon / Tusayan, Arizona, GCN">
+	<option value="Peach Springs, Arizona, GCW">
+	<option value="Grand Forks, North Dakota, GFK">
+	<option value="Grand Junction, Colorado, GJT">
+	<option value="Great Falls, Montana, GTF">
+	<option value="Binghamton, New York, BGM">
+	<option value="Rochester, New York, ROC">
+	<option value="Green Bay, Wisconsin, GRB">
+	<option value="Lewisburg, West Virginia, LWB">
+	<option value="Greenville, South Carolina, GSP">
+	<option value="Gulfport / Biloxi, Mississippi, GPT">
+	<option value="Gunnison, Colorado, GUC">
+	<option value="Hagerstown, Maryland, HGR">
+	<option value="Harrisburg / Middletown, Pennsylvania, MDT">
+	<option value="Atlanta, Georgia, ATL">
+	<option value="Fargo, North Dakota, FAR">
+	<option value="Helena, Montana, HLN">
+	<option value="Hilo , Hawaii, Hawaii, ITO">
+	<option value="Hilton Head Island, South Carolina, HHH">
+	<option value="Homer, Alaska, HOM">
+	<option value="Hancock / Calumet, Michigan, CMX">
+	<option value="Huntsville, Alabama, HSV">
+	<option value="Idaho Falls, Idaho, IDA">
+	<option value="Indianapolis, Indiana, IND">
+	<option value="Ithaca, New York, ITH">
+	<option value="Beaumont / Port Arthur, Texas, BPT">
+	<option value="Jackson, Wyoming, JAC">
+	<option value="Jackson, Mississippi, JAN">
+	<option value="Jacksonville, Florida, JAX">
+	<option value="Dayton, Ohio, DAY">
+	<option value="New York, New York, JFK">
+	<option value="Columbus, Ohio, CMH">
+	<option value="Santa Ana, California, SNA">
+	<option value="Joplin, Missouri, JLN">
+	<option value="Ceiba, Puerto Rico, NRR">
+	<option value="Juneau, Alaska, JNU">
+	<option value="Kahului , Maui, Hawaii, OGG">
+	<option value="Kalamazoo / Battle Creek, Michigan, AZO">
+	<option value="Kansas City, Missouri, MCI">
+	<option value="Kenai, Alaska, ENA">
+	<option value="Ketchikan, Alaska, KTN">
+	<option value="Key West, Florida, EYW">
+	<option value="Fort Hood / Killeen / Temple, Texas, GRK">
+	<option value="Seattle, Washington, BFI">
+	<option value="King Salmon, Alaska, AKN">
+	<option value="Rockland, Maine, RKD">
+	<option value="Kodiak, Alaska, ADQ">
+	<option value="Kailua-Kona , Hawaii, Hawaii, KOA">
+	<option value="La Crosse, Wisconsin, LSE">
+	<option value="Lafayette, Louisiana, LFT">
+	<option value="New York, New York, LGA">
+	<option value="Lake Charles, Louisiana, LCH">
+	<option value="Anchorage, Alaska,">
+	<option value="Lanai City , Lanai, Hawaii, LNY">
+	<option value="Laredo, Texas, LRD">
+	<option value="Bullhead City, Arizona, IFP">
+	<option value="Lawton, Oklahoma, LAW">
+	<option value="Hobbs, New Mexico, HOB">
+	<option value="Lebanon, New Hampshire, LEB">
+	<option value="Allentown, Pennsylvania, ABE">
+	<option value="Lewiston, Idaho, LWS">
+	<option value="Lihue , Kauai, Hawaii, LIH">
+	<option value="Lincoln, Nebraska, LNK">
+	<option value=", ,">
+	<option value="Long Beach, California, LGB">
+	<option value="Islip, New York, ISP">
+	<option value="Los Angeles, California, LAX">
+	<option value="New Orleans, Louisiana, MSY">
+	<option value="Louisville, Kentucky, SDF">
+	<option value="Lubbock, Texas, LBB">
+	<option value="San Juan / Carolina, Puerto Rico, SJU">
+	<option value="Lynchburg, Virginia, LYH">
+	<option value="Twin Falls, Idaho, TWF">
+	<option value="Mammoth Lakes, California, MMH">
+	<option value="Manchester, New Hampshire, MHT">
+	<option value="Manhattan, Kansas, MHK">
+	<option value="Vineyard Haven, Massachuttces, MVY">
+	<option value="Saginaw, Michigan, MBS">
+	<option value="McAllen, Texas, MFE">
+	<option value="Las Vegas, Nevada, LAS">
+	<option value="Carlsbad, California, CRQ">
+	<option value="Knoxville, Tennessee, TYS">
+	<option value="Bakersfield, California, BFL">
+	<option value="Melbourne, Florida, MLB">
+	<option value="Memphis, Tennessee, MEM">
+	<option value="Ponce, Puerto Rico, PSE">
+	<option value="Cordova, Alaska, CDV">
+	<option value="Anchorage, Alaska, MRI">
+	<option value="Miami, Florida, MIA">
+	<option value="Belleville, Illinois, BLV">
+	<option value="Midland, Texas, MAF">
+	<option value="Minneapolis, Minniesota, MSP">
+	<option value="Minot, North Dakota, MOT">
+	<option value="Missoula, Montana, MSO">
+	<option value="Mobile, Alabama, MOB">
+	<option value="Kaunakakai , Molokai, Hawaii, MKK">
+	<option value="Monroe, Louisiana, MLU">
+	<option value="Monterey, California, MRY">
+	<option value="Montgomery, Alabama, MGM">
+	<option value="Montrose, Colorado, MTJ">
+	<option value="Morgantown, West Virginia, MGW">
+	<option value="Muskegon, Michigan, MKG">
+	<option value="Myrtle Beach, South Carolina, MYR">
+	<option value="Nantucket, Massachuttces, ACK">
+	<option value="Nashville, Tennessee, BNA">
+	<option value="Newark, New Jersey, EWR">
+	<option value="Newport News, Virginia, PHF">
+	<option value="Niagara Falls, New York, IAG">
+	<option value="Nome, Alaska, OME">
+	<option value="Norfolk, Virginia, ORF">
+	<option value="San Jose, California, SJC">
+	<option value="Clarksburg, West Virginia, CKB">
+	<option value="Las Vegas / North Las Vegas, Nevada, VGT">
+	<option value="St. Augustine, Florida, UST">
+	<option value="Presque Isle, Maine, PQI">
+	<option value="Fayetteville, Arkansas, XNA">
+	<option value="Panama City Beach, Florida, ECP">
+	<option value="Oakland, California, OAK">
+	<option value="Ogden, Utah, OGD">
+	<option value="Ontario, California, ONT">
+	<option value="Orlando, Florida, MCO">
+	<option value="Orlando / Sanford, Florida, SFB">
+	<option value="Owensboro, Kentucky, OWB">
+	<option value="Page, Arizona, PGA">
+	<option value="West Palm Beach, Florida, PBI">
+	<option value="Palm Springs, California, PSP">
+	<option value="Wenatchee, Washington, EAT">
+	<option value="Pellston, Michigan, PLN">
+	<option value="Pensacola, Florida, PNS">
+	<option value="Petersburg, Alaska, PSG">
+	<option value="Philadelphia, Pennsylvania, PHL">
+	<option value="Phoenix, Arizona, PHX">
+	<option value="Mesa, Arizona, AZA">
+	<option value="Greensboro, North Carolina, GSO">
+	<option value="Greenville, North Carolina, PGV">
+	<option value="Pittsburgh, Pennsylvania, PIT">
+	<option value="Plattsburgh, New York, PBG">
+	<option value="Pocatello / Arbon Valley, Idaho, PIH">
+	<option value="Portland, Oregon, PDX">
+	<option value="Portland, Maine, PWM">
+	<option value="Portsmouth, New Hampshire, PSM">
+	<option value="Provincetown, Massachuttces, PVC">
+	<option value="Provo, Utah, PVU">
+	<option value="Pullman / Moscow, Idaho, Washington, PUW">
+	<option value="Punta Gorda, Florida, PGD">
+	<option value="Moline, Illinois, MLI">
+	<option value="Quincy, Illinois, UIN">
+	<option value="Aguadilla, Puerto Rico, BQN">
+	<option value="Raleigh, North Carolina, RDU">
+	<option value="Kotzebue, Alaska, OTZ">
+	<option value="Hibbing, Minniesota, HIB">
+	<option value="Rapid City, South Dakota, RAP">
+	<option value="Redding, California, RDD">
+	<option value="Redmond, Oregon, RDM">
+	<option value="Reno, Nevada, RNO">
+	<option value="Farmingdale, New York, FRG">
+	<option value="Rhinelander, Wisconsin, RHI">
+	<option value="Richmond, Virginia, RIC">
+	<option value="Amarillo, Texas, AMA">
+	<option value="Columbus, Ohio, LCK">
+	<option value="Riverton, Wyoming, RIW">
+	<option value="Roanoke, Virginia, ROA">
+	<option value="Rochester, Minniesota, RST">
+	<option value="Medford, Oregon, MFR">
+	<option value="Washington, D.C. / Arlington County, Virginia, DCA">
+	<option value="Roswell, New Mexico, ROW">
+	<option value="Sacramento, California, SMF">
+	<option value="Salisbury, Maryland, SBY">
+	<option value="Salt Lake City, Utah, SLC">
+	<option value="San Angelo, Texas, SJT">
+	<option value="San Antonio, Texas, SAT">
+	<option value="San Diego, California, SAN">
+	<option value="San Francisco, California, SFO">
+	<option value="San Luis Obispo, California, SBP">
+	<option value="Santa Barbara, California, SBA">
+	<option value="Santa Fe, New Mexico, SAF">
+	<option value="Santa Maria, California, SMX">
+	<option value="Sarasota / Bradenton, Florida, SRQ">
+	<option value="Savannah, Georgia, SAV">
+	<option value="Marquette / Gwinn, Michigan, MQT">
+	<option value="Seattle / Tacoma ( SeaTac ), Washington, SEA">
+	<option value="Sheridan, Wyoming, SHR">
+	<option value="Shreveport, Louisiana, SHV">
+	<option value="Sidney, Montana, SDY">
+	<option value="Sioux Falls, South Dakota, FSD">
+	<option value="Sioux City, Iowa, SUX">
+	<option value="Sitka, Alaska, SIT">
+	<option value="Williston, North Dakota, ISN">
+	<option value="South Bend, Indiana, SBN">
+	<option value="Fort Myers, Florida, RSW">
+	<option value="Albany, Georgia, ABY">
+	<option value="North Bend, Oregon, OTH">
+	<option value="Rock Springs, Wyoming, RKS">
+	<option value="Spokane, Washington, GEG">
+	<option value="Springfield, Missouri, SGF">
+	<option value="St. Cloud, Minniesota, STC">
+	<option value="St. George, Utah, SGU">
+	<option value="St. Louis, Missouri, STL">
+	<option value="St. Mary's, Alaska, KSM">
+	<option value="St. Petersburg / Clearwater, Florida, PIE">
+	<option value="Newburgh, New York, SWF">
+	<option value="Stockton, California, SCK">
+	<option value="Syracuse, New York, SYR">
+	<option value="Tallahassee, Florida, TLH">
+	<option value="Tampa, Florida, TPA">
+	<option value="Anchorage, Alaska, ANC">
+	<option value="Texarkana, Arkansas, TXK">
+	<option value="Cedar Rapids, Iowa, CID">
+	<option value="Providence / Warwick, Rhode Island, PVD">
+	<option value="Toledo, Ohio, TOL">
+	<option value="Topeka, Kansas, FOE">
+	<option value="Trenton, New Jersey, TTN">
+	<option value="Pasco, Washington, PSC">
+	<option value="Bristol / Johnson City / Kingsport, Tennessee, TRI">
+	<option value="Huntington, West Virginia, HTS">
+	<option value="Tucson, Arizona, TUS">
+	<option value="Tulsa, Oklahoma, TUL">
+	<option value="New Haven, Connecticut, HVN">
+	<option value="Tyler, Texas, TYR">
+	<option value="Unalakleet, Alaska, UNK">
+	<option value="Unalaska, Alaska, DUT">
+	<option value="Champaign / Urbana, Illinois, CMI">
+	<option value="State College, Pennsylvania, SCE">
+	<option value="Valdez, Alaska, VDZ">
+	<option value="Valdosta, Georgia, VLD">
+	<option value="Harlingen, Texas, HRL">
+	<option value="Waco, Texas, ACT">
+	<option value="Walla Walla, Washington, ALW">
+	<option value="Washington, D.C. / Dulles / Chantilly, Virginia, IAD">
+	<option value="Waterloo, Iowa, ALO">
+	<option value="Watertown, New York, ART">
+	<option value="White Plains, New York, HPN">
+	<option value="Westerly, Rhode Island, WST">
+	<option value="Wichita, Kansas, ICT">
+	<option value="Wichita Falls, Texas, SPS">
+	<option value="Barrow, Alaska, BRW">
+	<option value="Wilkes-Barre / Scranton, Pennsylvania, AVP">
+	<option value="Oklahoma City, Oklahoma, OKC">
+	<option value="Houston, Texas, HOU">
+	<option value="Port Angeles, Washington, CLM">
+	<option value="Marion, Illinois, MWA">
+	<option value="Williamsport, Pennsylvania, IPT">
+	<option value="Wilmington, Delaware, ILG">
+	<option value="Wilmington, North Carolina, ILM">
+	<option value="Worcester, Massachuttces, ORH">
+	<option value="Wrangell, Alaska, WRG">
+	<option value="Yakima, Washington, YKM">
+	<option value="Yakutat, Alaska, YAK">
+	<option value="Hayden, Colorado, HDN">
+	<option value="Charleston, West Virginia, CRW">
+	<option value="Cody, Wyoming, COD">
+	<option value="Youngstown / Warren, Ohio, YNG">
+	<option value="Yuma, Arizona, YUM">
+</datalist>
+        
+    <div class="input-grp">
+        <label>Departing</label>
+        <input type="date" class="form-control select-date" name="departing">
+    </div>
+    
+    <div class="input-grp">
+        <label>Returning</label>
+        <input type="date" class="form-control select-date" name="returning">
+    </div>
+    
+    <div class="input-grp">
+        <label>Adults</label>
+        <input type="number" class="form-control" value="1" name="adults">
+    </div>
+
+    <div class="input-grp">
+        <label>Children</label>
+        <input type="number" class="form-control" value="0" name="children">
+    </div>
+
+    <div class="input-grp">
+        <label>Cabin Class</label>
+        <select class="custom-select" name="cabinclass">
+            <option value="1">Economy</option>
+            <option value="2">First Class</option>
+        </select>
+    </div>
+    
+    <div class="input-grp">
+        <input type="submit" value="Checkout" class="btn btn-primary flight">
+    </div>    
+    
+    </div>
+    </form>
+</div>
+</body>
+</html>
